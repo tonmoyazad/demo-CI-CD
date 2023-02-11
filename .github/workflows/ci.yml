@@ -24,9 +24,9 @@ jobs:
         run: echo ls 
 
       - name: instal python
-      - uses: actions/setup-python@v4
-        with:
-        python-version: '3.8'
+         uses: actions/setup-python@v4
+         with:
+          python-version: '3.8'
 
       - name: run python
       - run: python create_file.py
