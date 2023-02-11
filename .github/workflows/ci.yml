@@ -20,6 +20,7 @@ jobs:
     steps:
       
       - uses: actions/checkout@v3
+
       - name: list of original files  
         run: echo ls 
 
@@ -29,7 +30,7 @@ jobs:
           python-version: '3.8'
 
       - name: run python
-      - run: python create_file.py
+        run: python create_file.py
       
       - name: list of new files  
         run: echo ls  
