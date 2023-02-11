@@ -20,10 +20,8 @@ jobs:
     steps:
       
       - uses: actions/checkout@v3
-      
       - name: list of original files  
-        run: |
-          echo ls 
+        run: echo ls 
 
       - name: instal python
       - uses: actions/setup-python@v4
@@ -34,5 +32,4 @@ jobs:
       - run: python create_file.py
       
       - name: list of new files  
-        run: |
-          echo ls  
+        run: echo ls  
